@@ -30,6 +30,12 @@
     .bottom { border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; padding-top: 32px; padding-bottom: 72px; }
     .bottom h2 { margin: 15px 0 10px; font-size: 18px; font-weight: 500; letter-spacing: -.02em; }
     .bottom p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; word-break: keep-all; }
+    .experience { border-top: 1px solid var(--line); padding: 32px 0 72px; }
+    .experience h2 { margin: 20px 0 32px; font-size: clamp(30px, 4vw, 48px); font-weight: 500; letter-spacing: -.04em; }
+    .experience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .experience-item { border-top: 1px solid var(--line); padding-top: 20px; }
+    .experience-item h3 { margin: 14px 0 10px; font-size: 18px; font-weight: 500; }
+    .experience-item p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; word-break: keep-all; }
     footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; padding-bottom: 28px; color: #747671; font-size: 10px; letter-spacing: .1em; }
     @media (max-width: 700px) {
       header { height: 70px; }
@@ -37,6 +43,7 @@
       h1 { font-size: clamp(58px, 15vw, 90px); }
       .diagram { width: min(85%, 370px); justify-self: center; }
       .bottom { grid-template-columns: 1fr; gap: 32px; padding-bottom: 55px; }
+      .experience-grid { grid-template-columns: 1fr; gap: 30px; }
       footer { flex-wrap: wrap; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -80,6 +87,22 @@
         <div><span class="label">01 / Background</span><h2>Built on engineering.</h2><p>기계공학을 바탕으로 복잡한 문제를 구조적으로 바라봅니다.</p></div>
         <div><span class="label">02 / Focus</span><h2>Driven by intelligence.</h2><p>데이터와 AI를 통해 아이디어를 실험하고 실질적인 해결책을 탐구합니다.</p></div>
         <div><span class="label">03 / Mindset</span><h2>Always in progress.</h2><p>끊임없이 배우고, 함께 나누며, 더 나은 결과를 만들어갑니다.</p></div>
+      </section>
+      <section class="experience" aria-labelledby="experience-title">
+        <span class="label">04 / Experience</span>
+        <h2 id="experience-title">Learning &amp; building.</h2>
+        <div class="experience-grid">
+          <div class="experience-item">
+            <span class="label">AI / Education</span>
+            <h3>HYUNDAI AI AINSIGHT CAMPUS</h3>
+            <p>AI 엔지니어 1기 수강 중</p>
+          </div>
+          <div class="experience-item">
+            <span class="label">Engineering / Leadership</span>
+            <h3>MECHIVE · 부대표</h3>
+            <p>교내 입주기업 MECHIVE에서 공기압식 무전력 차수막 장치를 만들고 있습니다.</p>
+          </div>
+        </div>
       </section>
     </main>
 

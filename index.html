@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="기계공학의 시선으로 문제를 바라보는 AI 엔지니어 백효현의 소개 페이지입니다.">
+  <title>HyoHyeon Baek — AI Engineer</title>
+  <style>
+    :root { color-scheme: dark; --bg: #111211; --text: #f1f1ed; --muted: #92938e; --line: #373936; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid white; outline-offset: 5px; }
+    .wrap { width: min(1440px, 100%); margin: auto; padding: 0 7%; }
+    header { height: 90px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+    .logo { font-size: 13px; font-weight: 700; letter-spacing: .12em; }
+    .nav { color: #b6b7b1; font-size: 12px; letter-spacing: .1em; }
+    .nav:hover, .link:hover { color: white; }
+    .hero { min-height: 690px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 30px; position: relative; }
+    .eyebrow, .label { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; display: inline-block; width: 25px; height: 1px; background: #a8aaa4; margin: 0 12px 3px 0; }
+    h1 { font-size: clamp(64px, 8vw, 120px); line-height: .91; letter-spacing: -.065em; font-weight: 500; margin: 35px 0; }
+    h1 span { color: #747672; }
+    .intro { color: #b2b3ad; font-size: 15px; line-height: 1.9; word-break: keep-all; max-width: 420px; }
+    .link { display: inline-block; margin-top: 30px; border-bottom: 1px solid #7b7d77; padding-bottom: 10px; font-size: 11px; letter-spacing: .13em; }
+    .diagram { position: relative; width: min(100%, 480px); aspect-ratio: 1; justify-self: end; display: grid; place-items: center; }
+    .diagram svg { width: 100%; height: 100%; }
+    .diagram-caption { position: absolute; bottom: 3%; right: 0; color: #777973; font-size: 9px; letter-spacing: .15em; }
+    .bottom { border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; padding-top: 32px; padding-bottom: 72px; }
+    .bottom h2 { margin: 15px 0 10px; font-size: 18px; font-weight: 500; letter-spacing: -.02em; }
+    .bottom p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; word-break: keep-all; }
+    footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; padding-bottom: 28px; color: #747671; font-size: 10px; letter-spacing: .1em; }
+    @media (max-width: 700px) {
+      header { height: 70px; }
+      .hero { min-height: auto; grid-template-columns: 1fr; padding: 95px 0 50px; gap: 25px; }
+      h1 { font-size: clamp(58px, 15vw, 90px); }
+      .diagram { width: min(85%, 370px); justify-self: center; }
+      .bottom { grid-template-columns: 1fr; gap: 32px; padding-bottom: 55px; }
+      footer { flex-wrap: wrap; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#top" aria-label="HyoHyeon Baek, 처음으로">HB /</a>
+      <a class="nav" href="#about">ABOUT ↗</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow">Mechanical thinking, intelligent solutions</div>
+          <h1 id="hero-title">HyoHyeon<br><span>Baek.</span></h1>
+          <p class="intro">기계공학의 시선으로 문제를 이해하고,<br>AI로 더 나은 가능성을 만들어갑니다.</p>
+          <a class="link" href="#about">DISCOVER MORE &nbsp; ↓</a>
+        </div>
+        <div class="diagram" aria-hidden="true">
+          <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#40423e" stroke-width="1">
+              <circle cx="240" cy="240" r="190"/><circle cx="240" cy="240" r="155"/><circle cx="240" cy="240" r="105"/>
+              <path d="M20 240H460M240 20V460M84 84L396 396M396 84L84 396"/>
+              <rect x="130" y="130" width="220" height="220" transform="rotate(45 240 240)"/>
+              <rect x="166" y="166" width="148" height="148"/>
+            </g>
+            <g stroke="#8c8e87" stroke-width="1.2">
+              <path d="M135 240L188 169L265 145L333 203L314 286L240 338L166 291Z"/>
+              <path d="M135 240L224 224L188 169M224 224L265 145M224 224L333 203M224 224L314 286M224 224L240 338M224 224L166 291"/>
+            </g>
+            <g fill="#d2d3cc"><circle cx="135" cy="240" r="3"/><circle cx="188" cy="169" r="3"/><circle cx="265" cy="145" r="3"/><circle cx="333" cy="203" r="3"/><circle cx="314" cy="286" r="3"/><circle cx="240" cy="338" r="3"/><circle cx="166" cy="291" r="3"/><circle cx="224" cy="224" r="4"/></g>
+            <g fill="#777973" font-family="monospace" font-size="9" letter-spacing="2"><text x="28" y="226">01</text><text x="424" y="226">02</text><text x="251" y="34">SYS.</text><text x="251" y="452">AI / ME</text></g>
+          </svg>
+          <span class="diagram-caption">FIG. 01 &nbsp; / &nbsp; STRUCTURE & INTELLIGENCE</span>
+        </div>
+      </section>
+
+      <section class="bottom" id="about" aria-label="소개">
+        <div><span class="label">01 / Background</span><h2>Built on engineering.</h2><p>기계공학을 바탕으로 복잡한 문제를 구조적으로 바라봅니다.</p></div>
+        <div><span class="label">02 / Focus</span><h2>Driven by intelligence.</h2><p>데이터와 AI를 통해 아이디어를 실험하고 실질적인 해결책을 탐구합니다.</p></div>
+        <div><span class="label">03 / Mindset</span><h2>Always in progress.</h2><p>끊임없이 배우고, 함께 나누며, 더 나은 결과를 만들어갑니다.</p></div>
+      </section>
+    </main>
+
+    <footer><span>© HYO HYEON BAEK</span><span>ENGINEERING × ARTIFICIAL INTELLIGENCE</span></footer>
+  </div>
+</body>
+</html>
